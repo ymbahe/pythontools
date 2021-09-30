@@ -22,7 +22,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="tools",
+    name="pythontools",
     version="0.1",
     author="Yannick Bahe",
     author_email="bahe@strw.leidenuniv.nl",
