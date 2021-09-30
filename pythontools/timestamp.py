@@ -228,8 +228,10 @@ class TimeStamp:
 
         print("")
         print("-" * 70)
-        print(caption + " ({:.2f} min.)"
-              .format(self.fullTime/60))
+        if minutes:
+            print(caption + " ({:.2f} min.)" .format(self.fullTime/60))
+        else:
+            print(caption + " ({:.4f} sec.)" .format(self.fullTime))
         print("-" * 70)
 
         if mode in ['detailed', 'top']:
